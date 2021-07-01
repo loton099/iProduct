@@ -377,6 +377,6 @@ public protocol Cancellable {
   func cancel()
 }
 
-private protocol Handler : class {
+private protocol Handler : AnyObject {
   func handle(handle: Handle)
 }

@@ -2,7 +2,7 @@
 //  ProductModel+CoreDataProperties.swift
 //  iProduct
 //
-//  Created by Shakti Prakash Srichandan on 29/06/21.
+//  Created by Shakti Prakash Srichandan on 01/07/21.
 //
 //
 

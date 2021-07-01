@@ -37,8 +37,7 @@ class iProductTests: XCTestCase {
         }
         waitForExpectations(timeout: 5, handler: nil)
         XCTAssertEqual(productsut.itemCount, 2)
-        productsut.fetchProductDetailFromDBWith()
-        XCTAssertEqual(productsut.itemCount, 2)
+        
     }
     
     func testProductFetchFromDB() throws {

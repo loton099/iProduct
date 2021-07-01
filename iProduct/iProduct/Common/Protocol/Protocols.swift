@@ -8,7 +8,7 @@
 import Foundation
 
 //MARK: - Protocol to handle common callbacks of view models
-protocol BaseViewModel: class {
+protocol BaseViewModel: AnyObject {
     // Used to update the request started/ended status. can be used to update the activity indicator.
     var requestStatusChanged: ((_ inProgress: Bool) -> Void)? { get set }
     // Used to inform about the error
@@ -33,7 +33,7 @@ protocol Tappable: AnyObject {
 }
 
 protocol Fetchable {
-    func batchInsertProducts(_ products: [Displayable]) throws
+    func batchInsertProducts(_ products: [Displayable] ,completion: @escaping (Result<Bool, MEError>) -> Void)
     func fetchProductDetailsWith(_ offset: Int, predicate: Bool) -> [Displayable]
     func updateCartDetails(of product: Displayable) -> Displayable?
 }

@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		D6083001268DC27E0006F241 /* MockNetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6083000268DC27E0006F241 /* MockNetworkManager.swift */; };
+		D6083011268E1DD70006F241 /* ProductModel+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6083010268E1DD70006F241 /* ProductModel+CoreDataProperties.swift */; };
 		D65BD0D3268AEA4400F0AE41 /* PathUtilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = D65BD0D2268AEA4400F0AE41 /* PathUtilities.swift */; };
 		D65BD0D8268AEA6A00F0AE41 /* ImageCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = D65BD0D7268AEA6A00F0AE41 /* ImageCache.swift */; };
 		D65BD0DE268AED0400F0AE41 /* NetworkImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D65BD0DD268AED0400F0AE41 /* NetworkImageView.swift */; };
@@ -19,7 +20,6 @@
 		D65BD101268B111D00F0AE41 /* Networkmanager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D65BD100268B111D00F0AE41 /* Networkmanager.swift */; };
 		D65BD109268B11A900F0AE41 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = D65BD108268B11A900F0AE41 /* Localizable.strings */; };
 		D65BD10E268B128400F0AE41 /* Codable+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D65BD10D268B128400F0AE41 /* Codable+Additions.swift */; };
-		D65BD11F268B68CF00F0AE41 /* ProductModel+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = D65BD11E268B68CF00F0AE41 /* ProductModel+CoreDataProperties.swift */; };
 		D65BD127268B6CFE00F0AE41 /* ProductDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = D65BD126268B6CFE00F0AE41 /* ProductDataSource.swift */; };
 		D66B757E2689955900D594AA /* ProductModel+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = D66B757C2689955900D594AA /* ProductModel+CoreDataClass.swift */; };
 		D6DEEAED26898F91006E19E7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6DEEAEC26898F91006E19E7 /* AppDelegate.swift */; };
@@ -64,6 +64,7 @@
 
 /* Begin PBXFileReference section */
 		D6083000268DC27E0006F241 /* MockNetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockNetworkManager.swift; sourceTree = "<group>"; };
+		D6083010268E1DD70006F241 /* ProductModel+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ProductModel+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		D65BD0D2268AEA4400F0AE41 /* PathUtilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PathUtilities.swift; sourceTree = "<group>"; };
 		D65BD0D7268AEA6A00F0AE41 /* ImageCache.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageCache.swift; sourceTree = "<group>"; };
 		D65BD0DD268AED0400F0AE41 /* NetworkImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkImageView.swift; sourceTree = "<group>"; };
@@ -75,7 +76,6 @@
 		D65BD100268B111D00F0AE41 /* Networkmanager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Networkmanager.swift; sourceTree = "<group>"; };
 		D65BD108268B11A900F0AE41 /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
 		D65BD10D268B128400F0AE41 /* Codable+Additions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Codable+Additions.swift"; sourceTree = "<group>"; };
-		D65BD11E268B68CF00F0AE41 /* ProductModel+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ProductModel+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		D65BD126268B6CFE00F0AE41 /* ProductDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductDataSource.swift; sourceTree = "<group>"; };
 		D66B757C2689955900D594AA /* ProductModel+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ProductModel+CoreDataClass.swift"; sourceTree = "<group>"; };
 		D6DEEAE926898F91006E19E7 /* iProduct.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iProduct.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -339,7 +339,7 @@
 		D6DEEB47268991B5006E19E7 /* Storage */ = {
 			isa = PBXGroup;
 			children = (
-				D65BD11E268B68CF00F0AE41 /* ProductModel+CoreDataProperties.swift */,
+				D6083010268E1DD70006F241 /* ProductModel+CoreDataProperties.swift */,
 				D66B757C2689955900D594AA /* ProductModel+CoreDataClass.swift */,
 				D6DEEB48268991E2006E19E7 /* PersistenceManager.swift */,
 				D6DEEAF526898F91006E19E7 /* iProduct.xcdatamodeld */,
@@ -496,7 +496,6 @@
 				D65BD0D3268AEA4400F0AE41 /* PathUtilities.swift in Sources */,
 				D65BD127268B6CFE00F0AE41 /* ProductDataSource.swift in Sources */,
 				D6DEEAEF26898F91006E19E7 /* SceneDelegate.swift in Sources */,
-				D65BD11F268B68CF00F0AE41 /* ProductModel+CoreDataProperties.swift in Sources */,
 				D6DEEB3A26899079006E19E7 /* BaseViewController.swift in Sources */,
 				D6DEEAF726898F91006E19E7 /* iProduct.xcdatamodeld in Sources */,
 				D65BD0FA268AFF8100F0AE41 /* ProductListTableViewCell.swift in Sources */,
@@ -506,6 +505,7 @@
 				D6DEEB3726899079006E19E7 /* AlertManager.swift in Sources */,
 				D65BD10E268B128400F0AE41 /* Codable+Additions.swift in Sources */,
 				D6DEEB3F26899079006E19E7 /* UITableViewCell+Additions.swift in Sources */,
+				D6083011268E1DD70006F241 /* ProductModel+CoreDataProperties.swift in Sources */,
 				D6DEEB3826899079006E19E7 /* StoryboardManager.swift in Sources */,
 				D6DEEB3526899079006E19E7 /* MEError.swift in Sources */,
 			);

@@ -43,7 +43,7 @@ class ViewController: BaseViewController {
     
     func scrollViewDidEndDecelerating(_ scrollView: UIScrollView) {
         if shouldLoadMore() {
-            viewModel.fetchProductDetailFromDBWith()
+            viewModel.fetchProductDetailFromDB()
         }
     }
     

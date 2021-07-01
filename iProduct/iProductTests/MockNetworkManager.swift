@@ -19,9 +19,13 @@ class MockNetworkFetcher: NetworkFetchable  {
 }
 
 class MockDataSource: Fetchable {
+   
+    
     private var localProducts: [Displayable] = []
-    func batchInsertProducts(_ products: [Displayable]) throws {
+   
+    func batchInsertProducts(_ products: [Displayable], completion: @escaping (Result<Bool, MEError>) -> Void) {
         localProducts = products
+        completion(.success(true))
     }
     
     func fetchProductDetailsWith(_ offset: Int, predicate: Bool) -> [Displayable] {
