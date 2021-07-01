@@ -1,0 +1,15 @@
+/* 
+  Localizable.strings
+  iProduct
+
+  Created by Shakti Prakash Srichandan on 29/06/21.
+  
+*/
+
+"ok" = "OK";
+"try_again" = "Please try again after sometimes";
+"something_wrong" = "Something went wrong";
+"decoding_error" = "Something went wrong";
+"empty_cart" = "Your cart is empty";
+"add_to_cart" = "Please add items  to see here";
+"added_to_cart" = "Added to cart";
