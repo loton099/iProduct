@@ -36,7 +36,7 @@ class ProductDataSource: Fetchable {
     func fetchProductDetailsWith(_ offset: Int, predicate: Bool) -> [Displayable] {
         let fetchRequest: NSFetchRequest<ProductModel> =
             ProductModel.fetchRequest()
-        //fetchRequest.fetchLimit = 10
+        fetchRequest.fetchLimit = 10
         fetchRequest.fetchOffset = offset
         if predicate {
             fetchRequest.predicate = NSPredicate(format: "isaddedToCart  = %d ", true)
